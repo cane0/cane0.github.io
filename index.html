@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">	
+		
+	<title>{{ title }}</title>
+	<!-- icon start -->
+	<link rel="icon" href="" type="image/icon">
+	<!-- icon end -->
+	<style>
+	.row{margin:0!important;padding:0!important;}
+    #alert-here-box{position:fixed;z-index:1051;top:15%;left:50%;transform:translate(-50%, -50%);width:94vw;margin:0;padding:0;}
+	</style>
+	<style>
+		.short-text { display: none; }
+		@media (max-width: 480px) {
+			.short-text { display: inline-block; }
+			.full-text { display: none; }
+		}
+	</style>
+	<style>
+		.post-body {
+			border-radius: 10px !important;
+		}
+		.user-img {
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			border-radius: 200px;
+			max-width: 60px;
+		}
+		.event-imgs {
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		.blog-img {
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			height: 30vh;
+		}
+		#cookieok {
+			padding: 20px;
+			position: fixed;
+		}
+		@media (max-width: 767.9px) {
+			#cookieok {
+				width: 100vw;
+				top: 0;
+				left: 0;
+			}
+		}
+		@media (min-width: 768px) {
+			#cookieok {
+				width: 25vw;
+				bottom: 0;
+				right: 0;
+			}
+			#top-box {
+				border-radius: 14px;
+				padding: 6vw 3vw;
+				text-align: left;
+				background-color: #fff !important;
+				box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+			}
+		}
+		.row .col-md-6 .sticky-top {
+			top: 70px;
+		}
+		
+		.sa {
+			padding-top: 0pt;
+			padding-bottom: 0pt;
+			line-height: 1.0;
+			orphans: 2;
+			widows: 2;
+			text-align: center
+		}
+		
+		.titre {
+			padding-top: 0pt;
+			color: #595959;
+			font-size: 35pt;
+			padding-bottom: 0pt;
+			font-family: "Georgia";
+			line-height: 1.0;
+			orphans: 2;
+			widows: 2;
+			text-align: center
+		}
+		
+		.c14r {
+			font-family: Arial;
+			font-weight:10px;
+		}
+		
+		.mbutton {
+			background-color: #333;
+			border: none;
+			color: white;
+			padding: 10px 20px;
+			text-align: right;
+			text-decoration: none;
+			display: inline-block;
+			margin: 4px 2px;
+			cursor: pointer;
+			border-radius: 16px;
+			float: right;
+			font-family:Calibri;
+		}
+		
+		a.divider{
+			border-style: dashed;
+			border-bottom-width: 0px;
+			border-top-width: 0px;
+			border-left-width: 0px;
+			border-right-width: 1px;
+			border-right-color: #d9d9d9;
+		}
+		
+		.custom-toggler .navbar-toggler-icon {
+		  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+		}
+
+		.custom-toggler.navbar-toggler {
+		  border-color: #333;
+		}
+	  
+	  
+	  
+	</style>
+	<script src='https://kit.fontawesome.com/0452d4c8c4.js' crossorigin='anonymous'></script>
+</head>
+<body style="margin:0;">
+	
+	<div>	
+	<nav class="navbar navbar-expand-lg navbar-light" style="background-color:#156138;">
+		<button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color:#333;color:white;">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse " id="navbarSupportedContent" style="margin-left:200px;margin-right:200px;vertical-align:middle;">
+			<ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="list-style-type:none;margin:0px;padding:0px;">
+				<li class="nav-item"><a class="nav-link" href="#" style="color:white;">English <span class="sr-only">(current)</span></a></li>
+				<li class="nav-item"><a class="nav-link" href="#" style="color:white;">Francais <span class="sr-only">(current)</span></a></li>
+				<li class="nav-item"><a class="nav-link" href="#" style="color:white;"><i class="fa-solid fa-phone"></i>  &nbsp;Phone <span class="sr-only">(current)</span></a></li>
+				<li class="nav-item"><a class="nav-link" href="#" style="color:white;"><i class="fa-brands fa-linkedin"></i>  &nbsp;LinkedIn <span class="sr-only">(current)</span></a></li>
+				<li class="nav-item"><a class="nav-link" href="#" style="color:white;"><i class="fa-brands fa-github"></i>  &nbsp;Github <span class="sr-only">(current)</span></a></li>
+			</ul>			
+		</div>
+		
+		<button class="nav-link mbutton my-2 my-lg-0" onClick="document.getElementById('mlink').click()"><span><i class="fa-solid fa-download"></i>  &nbsp;Download Resume</span></button>
+		
+	</nav>
+	
+	</div>
+	
+	<div class="container-fluid px-0" id="main-container" style="margin-top: -15px;">
+		<div class="container p-0">
+			<div class="py-5 mt-4">
+	<section>
+
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="card mb-4">
+          <div class="card-body text-center">
+            <img src="images/image2.png" alt="avatar"
+              class="rounded-circle img-fluid" style="width: 150px;">
+            <h5 class="my-3">Cyrille Arnold NLEM EBO'O</h5>
+            <div class="d-flex justify-content-center mb-2">
+				<a href="tel:00919549439156" class="btn btn-sm btn-outline-secondary" style="color:#156138;background-color:#156138;"><i class="fa-solid fa-phone" style="color:white;"></i></a>&nbsp;<a href="mailto:nlemarnold@gmail.com" class="btn btn-sm btn-outline-secondary" style="color:white;background-color:#156138;"><i class="fa-solid fa-inbox" style="color:white;"></i> &nbsp;Contact Me</a>
+            </div>
+			<div class="justify-content-left">
+				<h5 class="my-3"><u>Professional Status</u></h5>
+				<span>&#x1f9d1;&#x1f3fe;&zwj;&#x1f393;Full-Time Postgraduate Student</span>
+				<span>&#x1f7e2;Open to opportunities</span>
+			</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="card mb-4">
+          <div class="card-body">
+            
+			<div class="row">
+              <div class="col-sm-3">
+                <h5 class="mb-0" style="color:#156138;">About Me</h5>
+              </div>
+              <div class="col-sm-9">
+                <p class="mb-0">I'm Cyrille, a student studying engineering. I think we should keep improving concepts until we find the best answers. Regardless of my position of authority, I take initiative. I have a strong work ethic and a reputation for excellence.</p>
+              </div>
+            </div>
+            <hr style="border-top: 1px dashed #ddd;">
+            
+			<h5 class="mb-0" style="background-color:#156138;color:white;text-align:center;">Skills</h5>
+			
+			<br/>
+			
+			<div class="row">
+              <div class="col-sm-3">
+                <h5 class="mb-0" style="color:#156138;">Technical Skills</h5>
+              </div>
+              <div class="col-sm-9">
+                <p class="mb-0"><b>&bull;&nbsp;Software Engineering</b></p>
+                <p class="mb-0"><b>&bull;&nbsp;Numerical Analysis</b></p>
+				<p class="mb-0"><b>&bull;&nbsp;Web Dev:</b> JavaScript, CSS3, HTML5, Bootstrap, Materialize, Google Sites</p>
+				<p class="mb-0"><b>&bull;&nbsp;Cloud Computing:</b> AWS, OCI, GCP</p>
+				<p class="mb-0"><b>&bull;&nbsp;Cybersecurity</b></p>
+				<p class="mb-0"><b>&bull;&nbsp;Code and Software version control:</b> GIT</p>
+				<p class="mb-0"><b>&bull;&nbsp;Data Structures and Algorithms</b></p>
+				<p class="mb-0"><b>&bull;&nbsp;Google Workspace, MS Office</b></p>
+				<p class="mb-0"><b>&bull;&nbsp;Operating Systems:</b> Windows, Unix</p>
+				<p class="mb-0"><b>&bull;&nbsp;Data Visualization:</b> Python, PowerBI, SQL, Spreadsheets</p>
+              </div>
+            </div>
+			
+			<br/>
+			
+			<div class="row">
+              <div class="col-sm-3">
+                <h5 class="mb-0" style="color:#156138;">Soft Skills</h5>
+              </div>
+              <div class="col-sm-9">
+                <p class="mb-0"><b>&bull;&nbsp;Project Management</b></p>
+				<p class="mb-0"><b>&bull;&nbsp;Leadership</b></p>
+				<p class="mb-0"><b>&bull;&nbsp;Communication</b></p>
+				<p class="mb-0"><b>&bull;&nbsp;Punctual</b></p>
+				<p class="mb-0"><b>&bull;&nbsp;Proactive</b></p>
+				<p class="mb-0"><b>&bull;&nbsp;Time Management</b></p>
+              </div>
+            </div>
+            <hr style="border-top: 1px dashed #ddd;">
+			
+			<h5 class="mb-0" style="background-color:#156138;color:white;text-align:center;">Professional Experience</h5>
+			
+			<br/>
+			
+			<div class="row">
+              <div class="col-sm-3">
+                <h5 class="mb-0" style="color:#156138;"><i><b>Megasoft</b> - Intern Developer</i></h5>
+              </div>
+              <div class="col-sm-9">
+                <p class="mb-0">TechStack: MySQL, Java, HTML</p>
+                <p class="mb-0">I got a deeper interest in Structured Query Languages and Java as a result of this internship and it boosted my confidence in the use of these newly acquired skills.</p>
+              </div>
+            </div>
+			
+			<br/>
+			
+			<div class="row">
+              <div class="col-sm-3">
+                <h5 class="mb-0" style="color:#156138;"><i><b>Cialfor</b> - Intern</i></h5>
+              </div>
+              <div class="col-sm-9">
+                <p class="mb-0">Skills acquired: Research, Blockchain, Cybersecurity</p>
+                <p class="mb-0">Despite the internship being held online (Due to the COVID Pandemic), I gained invaluable knowledge given that it was a startup and as such, communication was prioritized more than anything. I got experience in working physically unsupervised and keeping tight schedules.</p>
+              </div>
+            </div>
+			
+			<div class="row">
+              <div class="col-sm-3">
+                <h5 class="mb-0" style="color:#156138;"><i><b>PricewaterhouseCoopers</b> - Cybersecurity, Privacy, and Forensics - Data Protection - Intern</i></h5>
+              </div>
+              <div class="col-sm-9">
+                <p class="mb-0">Throughout my internship at the second-largest professional services network in the world I built and enhanced skills in -</p>
+                <p class="mb-0">&bull;&nbsp;Analysis of vulnerabilities data (collected through logs)</p>
+                <p class="mb-0">&bull;&nbsp;Establishing a gap analysis</p>
+                <p class="mb-0">&bull;&nbsp;Enterprise thinking. (Thinking to the most granular level) What impact can seemingly good ideas have company-wide</p>
+                <p class="mb-0">&bull;&nbsp;Giving detailed documentation of procedures for applying various security rules.</p>
+                <p class="mb-0"><b>&bull;&nbsp;Miscellaneous:</b> Cybersecurity audit of data suppliers</p>
+                <p class="mb-0"><b>&bull;&nbsp;Miscellaneous:</b>Creation and Update of Information Security website for sensitization within the firm.</p>
+                <p class="mb-0">&bull;&nbsp;Working within a broad network</p>
+                <p class="mb-0">&bull;&nbsp;Suggesting potential data exfiltration paths</p>
+                <p class="mb-0">&bull;&nbsp;Providing/Suggesting solutions (to the Chief Information Security Officer) the most efficient ways to implement various security rules without affecting business activities</p>
+              </div>
+            </div>
+			
+            <hr style="border-top: 1px dashed #ddd;">
+			
+			<h5 class="mb-0" style="background-color:#156138;color:white;text-align:center;">Education</h5>
+			
+			<br/>
+			
+			<div class="row">
+              
+			  <div class="col-sm-10">
+                <h5 class="mb-0" style="color:#156138;"><b>Bachelor of Technology -</b> <i>Computer Software Engineering @ Suresh Gyan Vihar University</i></h5>
+				<p class="mb-0">Since August 2018</p>
+              </div>
+			  
+			  <br/><br/><br/></br>
+			  
+			  <div class="col-sm-10">
+                <h5 class="mb-0" style="color:#156138;"><b>General Certificate of Education Advanced Level</b> (Science)<i> @ New Century Institute of Learning</i></h5>
+				<p class="mb-0">September 2016 - June 2018</p>
+              </div>
+			  
+            </div>
+            <hr style="border-top: 1px dashed #ddd;">
+			
+			<div class="row">
+              <div class="col-sm-3">
+                <h5 class="mb-0" style="color:#156138;">Professional Courses, Certifications and Licenses</h5>
+              </div>
+              <div class="col-sm-9">
+                <p class="mb-0">&bull;&nbsp;Oracle Certification: Oracle Cloud Infrastructure - Architect Associate <small>(Issued on April 2021 - Expires on April 2023)</small></p>
+				<p class="mb-0">&bull;&nbsp;Juniper Certification: JNCIA Cloud Associate</p>
+				<p class="mb-0">&bull;&nbsp;Architecting with Google Compute Engine Specialization <small>(Issued by Coursera on October 2020)</small></p>
+              </div>
+            </div>
+            <hr style="border-top: 1px dashed #ddd;">
+			
+            <div class="row">
+              <div class="col-sm-3">
+                <h5 class="mb-0" style="color:#156138;">Published Projects</h5>
+              </div>
+              <div class="col-sm-9">
+                <p class="mb-0">&bull;&nbsp;Blogging Web Application: <a href="https://github.com/cane0/django-blog-app">https://github.com/cane0/django-blog-app</a></p>
+                <p class="mb-0">&bull;&nbsp;Blogging Web Application: <a href="https://github.com/cane0/django-budget-app">https://github.com/cane0/django-budget-app</a></p>
+              </div>
+            </div>
+			<hr style="border-top: 1px dashed #ddd;">
+			
+			<div class="row">
+              <div class="col-sm-3">
+                <h5 class="mb-0" style="color:#156138;">Languages</h5>
+              </div>
+              <div class="col-sm-9">
+                <p class="mb-0">&bull;&nbsp;French  &nbsp;&nbsp;<i class="fa-solid fa-star" style="color: yellow;"></i><i class="fa-solid fa-star" style="color: yellow;"></i><i class="fa-solid fa-star" style="color: yellow;"></i><i class="fa-solid fa-star" style="color: yellow;"></i><i class="fa-regular fa-star" style="color: yellow;"></i></p>
+                <p class="mb-0">&bull;&nbsp;English &nbsp;&nbsp;<i class="fa-solid fa-star" style="color: yellow;"></i><i class="fa-solid fa-star" style="color: yellow;"></i><i class="fa-solid fa-star" style="color: yellow;"></i><i class="fa-regular fa-star-half-stroke" style="color: yellow;"></i><i class="fa-regular fa-star" style="color: yellow;"></i></p>
+              </div>
+            </div>
+			
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+		</div>
+	</div>
+	
+	<nav class="navbar navbar-expand navbar-light" style="background-color:#333;">
+		<div class="btn-group dropup">
+		  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:#156138;border:#156138;color:white;">
+			Share this resume on: 
+		  </button>
+		  <div class="dropdown-menu">
+			<a style="color:black;text-decoration:none;margin:30px;" target="_blank" href="https://www.linkedin.com/sharing/share-offsite/?url=instagram.com/cane___0"><i class="fa-brands fa-linkedin"></i>  &nbsp;LinkedIn</a>
+			<br/>
+			<a style="color:black;text-decoration:none;margin:30px;" href="#fr"><i class="fa-brands fa-facebook"></i>  &nbsp;Facebook</a>
+			<br/>
+			<a style="color:black;text-decoration:none;margin:30px;" href="#fr"><i class="fa-brands fa-twitter"></i>  &nbsp;Twitter</a>
+		  </div>
+		</div>
+	</nav>	
+	
+	<script>
+		window.onresize = function(event) {
+		  document.location.reload(true);
+		}
+
+		var href = window.location.href.split("/")
+		var html_location = href[href.length-1]
+
+		if (window.innerWidth >= 960 && html_location !== "res01.html") {
+			window.location = "res01.html";
+		}
+
+		if (window.innerWidth < 960 && html_location !== "res01mobile.html") {
+			window.location = "res01mobile.html";
+		}
+	</script>
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
