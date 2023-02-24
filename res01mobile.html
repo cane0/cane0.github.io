@@ -143,7 +143,7 @@
 		<button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color:#333;color:white;">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		<div class="collapse navbar-collapse " id="navbarSupportedContent" style="margin-left:200px;margin-right:200px;vertical-align:middle;">
+		<div class="collapse navbar-collapse " id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="list-style-type:none;margin:0px;padding:0px;">
 				<li class="nav-item"><a class="nav-link" href="#" style="color:white;">English <span class="sr-only">(current)</span></a></li>
 				<li class="nav-item"><a class="nav-link" href="#" style="color:white;">Francais <span class="sr-only">(current)</span></a></li>
@@ -356,6 +356,7 @@
 			<a style="color:black;text-decoration:none;margin:30px;" href="#fr"><i class="fa-brands fa-facebook"></i>  &nbsp;Facebook</a>
 			<br/>
 			<a style="color:black;text-decoration:none;margin:30px;" href="#fr"><i class="fa-brands fa-twitter"></i>  &nbsp;Twitter</a>
+			<p id="demo"></p>
 		  </div>
 		</div>
 	</nav>	
@@ -364,6 +365,9 @@
 		window.onresize = function(event) {
 		  document.location.reload(true);
 		}
+		
+		var winsize = window.innerWidth;
+		document.getElementById("demo").innerHTML = winsize
 
 		var href = window.location.href.split("/")
 		var html_location = href[href.length-1]
