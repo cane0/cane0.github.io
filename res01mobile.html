@@ -356,7 +356,6 @@
 			<a style="color:black;text-decoration:none;margin:30px;" href="#fr"><i class="fa-brands fa-facebook"></i>  &nbsp;Facebook</a>
 			<br/>
 			<a style="color:black;text-decoration:none;margin:30px;" href="#fr"><i class="fa-brands fa-twitter"></i>  &nbsp;Twitter</a>
-			<p id="demo"></p>
 		  </div>
 		</div>
 	</nav>	
@@ -365,9 +364,6 @@
 		window.onresize = function(event) {
 		  document.location.reload(true);
 		}
-		
-		var winsize = window.innerWidth;
-		document.getElementById("demo").innerHTML = winsize
 
 		var href = window.location.href.split("/")
 		var html_location = href[href.length-1]
