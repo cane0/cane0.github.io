@@ -1178,8 +1178,8 @@
 			window.location = "res01.html";
 		}
 
-		if (window.innerWidth < 960 && html_location !== "res01mobile.html") {
-			window.location = "res01mobile.html";
+		if (window.innerWidth < 960 && html_location !== "res01mobile.html" || navigator.appVersion.indexOf("Android") != -1) {
+			window.location.href = "res01mobile.html";
 		}
 	</script>
 	
