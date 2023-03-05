@@ -135,6 +135,48 @@
 		.custom-toggler.navbar-toggler {
 		  border-color: #333;
 		}
+		
+		.topnav {
+			overflow: hidden;
+			background-color: #156138;
+			font-family:Calibri;
+		}
+		
+		.topnav a {
+			float: left;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+		}
+		
+		.topnav a:hover {
+			background-color: white;
+			color: black;
+		}
+		
+		.topnav a.active {
+			background-color: white;
+			color: black;
+		}
+		
+		a.divider{
+			border-style: dashed;
+			border-bottom-width: 0px;
+			border-top-width: 0px;
+			border-left-width: 0px;
+			border-right-width: 1px;
+			border-right-color: white;
+		}
+		
+		.short-text { display: none; }
+		@media (max-width: 480px) {
+			.short-text { display: block; }
+			.full-text { display: none; }
+		}
+	   
+	  
 	  
 	  
 	  
@@ -144,19 +186,28 @@
 <body style="margin:0;background-color:#ddd;">
 	
 	<div>	
-	<nav class="navbar navbar-expand-lg navbar-light" style="background-color:#156138;">
+	<!--nav class="navbar navbar-expand-lg navbar-light" style="background-color:#156138;">
 		<button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color:#333;color:white;">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		<div class="collapse navbar-collapse " id="navbarSupportedContent">
+		<div class="collapse navbar-collapse " id="navbarSupportedContent" style="margin-left:193px;">
 			<ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="list-style-type:none;margin:0px;padding:0px;">
-				<li class="nav-item"><a class="nav-link" href="#" style="color:white;">Hi there, I'm Cyrille <span class="sr-only">(current)</span></a></li>
+				<li class="nav-item"><a class="nav-link" href="#" style="color:white; background-color:#333;">Hi there, I'm Cyrille <span class="sr-only">(current)</span></a></li>
 			</ul>			
+		</div>	
+	</nav-->
+	
+	<div class="topnav">
+		<div class="full-text" style="margin-left:207px;">
+			<a class="active divider" href="#"></i>Home</a>
+			<a class="divider" href="res01.html">Resume</a>
 		</div>
 		
-		<button class="nav-link mbutton my-2 my-lg-0" onClick="document.getElementById('mlink').click()"><span><i class="fa-solid fa-download"></i>  &nbsp;Download Resume</span></button>
-		
-	</nav>
+		<div class="short-text" style="margin-left:20px;">
+			<a class="active divider" href="#"></i>Home</a>
+			<a class="divider" href="res01.html">Resume</a>
+		</div>
+	</div>
 	
 	</div>
 	
@@ -166,13 +217,6 @@
 	<section>
 
     <div class="row">
-		
-		<br/>
-		<br/>
-		<br/>
-		
-		<div class="col-lg-2">
-		</div>
 	
       <div class="col-lg-8">
 	  
@@ -210,8 +254,82 @@
         </div>
       </div>
 	  
-	  <div class="col-lg-2">
+	  <div class="full-text col-lg-4">
+		
+			<div class="card mb-4">
+		
+          <div class="card-body">
+            <h5 class="text-center">Learn About me through</h5>
+			
+			<br/>
+			
+			<p style="margin-top:15px"><div class="row">
+				<div class="col-5">My Resume</div>
+				<a href="http://cane0.github.io/res01.html" class="btn btn-sm btn-outline-secondary" style="color:white;background-color:#156138;">
+					<i class="fa-solid fa-file"></i>&nbsp;&nbsp;Click me
+				</a>
+				</div>
+			</p>
+			<p style="margin-top:15px"><div class="row">
+				<div class="col-5">My Projects</div>
+				<a href="http://cane0.github.io/res01.html" class="btn btn-sm btn-outline-secondary" style="color:white;background-color:#156138;">
+					<i class="fa-solid fa-code-branch"></i>&nbsp;&nbsp;Click me
+				</a>
+				</div>
+			</p>
+			<p style="margin-top:15px"><div class="row">
+				<div class="col-5">My LinkedIn</div>
+				<a href="http://cane0.github.io/res01.html" class="btn btn-sm btn-outline-secondary" style="color:white;background-color:#156138;">
+					<i class="fa-brands fa-linkedin"></i>&nbsp;&nbsp;Click me
+				</a>
+				</div>
+			</p>
+			<p style="margin-top:15px"><div class="row">
+				<div class="col-5">My GitHub</div>
+				<a href="http://cane0.github.io/res01.html" class="btn btn-sm btn-outline-secondary" style="color:white;background-color:#156138;">
+					<i class="fa-brands fa-github"></i>&nbsp;&nbsp;Click me
+				</a>
+				</div>
+			</p>
+			
+          </div>
+        </div>
+		
+		<div class="card mb-4">
+		
+          <div class="card-body">
+            <h5 class="text-center">My Socials</h5>
+			
+			<br/>
+			<p style="margin-top:15px">
+				<a href="http://cane0.github.io/res01.html" class="btn btn-sm btn-outline-secondary" style="color:white;background-color:#156138;">
+					<i class="fa-brands fa-linkedin"></i>
+				</a>
+				&nbsp;&nbsp;LinkedIn
+			</p>
+			<p style="margin-top:15px">
+				<a href="http://cane0.github.io/res01.html" class="btn btn-sm btn-outline-secondary" style="color:white;background-color:#156138;">
+					<i class="fa-brands fa-square-facebook"></i>
+				</a>
+				&nbsp;&nbsp;Facebook
+			</p>
+			<p style="margin-top:15px">
+				<a href="http://cane0.github.io/res01.html" class="btn btn-sm btn-outline-secondary" style="color:white;background-color:#156138;">
+					<i class="fa-brands fa-instagram"></i>
+				</a>
+				&nbsp;&nbsp;Instagram
+			</p>
+			<p style="margin-top:15px">
+				<a href="http://cane0.github.io/res01.html" class="btn btn-sm btn-outline-secondary" style="color:white;background-color:#156138;">
+					<i class="fa-brands fa-snapchat"></i>
+				</a>
+				&nbsp;&nbsp;Snapchat
+			</p>
+          </div>
+        </div>
+		
 		</div>
+	  
   
     </div>
   </div>
@@ -222,8 +340,11 @@
 	
 	<nav class="navbar navbar-expand navbar-light" style="background-color:#333;">
 		<div class="btn-group dropup">
-		  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:#156138;border:#156138;color:white;">
-			Share this resume on: 
+		  <button type="button" class="short-text btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:#156138;border:#156138;color:white;">
+			Share this page on: 
+		  </button>
+		  <button type="button" class="full-text btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:#156138;border:#156138;color:white; margin-left:190px;">
+			Share this page on: 
 		  </button>
 		  <div class="dropdown-menu">
 			<a style="color:black;text-decoration:none;margin:30px;" target="_blank" href="https://www.linkedin.com/sharing/share-offsite/?url=cane0.github.io/"><i class="fa-brands fa-linkedin"></i>  &nbsp;LinkedIn</a>

@@ -688,16 +688,10 @@
 		</li>
 	</ul>
 	
-	<!--ul style="list-style-type:none;overflow:hidden;background-color:#156138;top:0;width=250px;height:50px; margin-top:-16px; vertical-align:middle;">
-		<div style="margin-left:170px;margin-right:305px;vertical-align:middle;">
-			<li style="text-align:left;vertical-align:middle;">HOme</li>
-		</div>
-	</ul-->
-	
 	<div class="topnav" style="margin-top:-16px;">
 		<div style="margin-left:207px;margin-right:305px;vertical-align:middle;">
-			<a class="active divider" href="#en"></i>English</a>
-			<a class="divider" href="#fr">Francais</a>
+			<a class="divider" href="http://cane0.github.io/"></i>Home</a>
+			<a class="active divider" href="#">Resume</a>
 			<a class="divider" href="tel:00919549439156"><i class="fa-solid fa-phone"></i>  &nbsp;Phone</a>
 			<a class="divider" href="https://www.linkedin.com/in/cyrille-nlem/"><i class="fa-brands fa-linkedin"></i>  &nbsp;LinkedIn</a>
 			<a class="divider" href="#github"><i class="fa-brands fa-github"></i>  &nbsp;Github</a>
@@ -1179,11 +1173,7 @@
 		var href = window.location.href.split("/")
 		var html_location = href[href.length-1]
 
-		if (window.innerWidth >= 960 && html_location !== "res01.html") {
-			window.location = "res01.html";
-		}
-
-		if (window.innerWidth < 960 && html_location !== "res01mobile.html" || navigator.appVersion.indexOf("Android") != -1) {
+		if (navigator.appVersion.indexOf("Mobile") != -1 && html_location !== "res01mobile.html") {
 			window.location.href = "res01mobile.html";
 		}
 	</script>
