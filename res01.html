@@ -656,6 +656,8 @@
 		font-family:Calibri;
 		padding-left: 5%;
 		padding-right: 6.5%;
+		display: flex;
+		justify-content: space-between;
 	  }
 	  
 	  .inside {
@@ -745,14 +747,35 @@
 			border: none;
 			color: white;
 			padding: 10px 20px;
-			text-align: right;
 			text-decoration: none;
-			display: inline-block;
 			margin: 4px 2px;
 			cursor: pointer;
 			border-radius: 16px;
-			float: right;
 			font-family:Calibri;
+			transition: width 1s ease-in-out;
+			overflow: hidden;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			white-space: nowrap;
+			width: 55px;
+		}
+
+		.mbutton:hover {
+			width: 200px;
+		}
+
+		.download-text {
+			display: none;
+			white-space: nowrap;
+			overflow: hidden;
+			max-width: 0;
+			transition: max-width 1s ease-in-out;
+		}
+		
+		.mbutton:hover .download-text {
+			display: inline-block;
+			max-width: 100%;
 		}
 		
 		.pbutton {
@@ -824,11 +847,20 @@
 	</div>
 	
 	<div class="topnav">
-			<a class="active divider" href="https://cane0.github.io/res01.html">Online CV</a>
-			<a class="divider" href="tel:00919549439156"><i class="fa-solid fa-phone" target="_blank"></i>  &nbsp;Phone</a>
-			<a class="divider" href="https://www.linkedin.com/in/cyrille-nlem/" target="_blank"><i class="fa-brands fa-linkedin"></i>  &nbsp;LinkedIn</a>
-			<a class="divider" href="https://github.com/cane0" target="_blank"><i class="fa-brands fa-github"></i>  &nbsp;Github</a>
-			<button class="mbutton" onClick="document.getElementById('mlink').click()"><span><i class="fa-solid fa-download"></i>  &nbsp;Download this resume</span></button>
+			<div>
+				<a class="active divider" href="https://cane0.github.io/res01.html">Online CV</a>
+				<a class="divider" href="tel:00919549439156"><i class="fa-solid fa-phone" target="_blank"></i>  &nbsp;Phone</a>
+				<a class="divider" href="https://www.linkedin.com/in/cyrille-nlem/" target="_blank"><i class="fa-brands fa-linkedin"></i>  &nbsp;LinkedIn</a>
+				<a class="divider" href="https://github.com/cane0" target="_blank"><i class="fa-brands fa-github"></i>  &nbsp;Github</a>	
+			</div>
+			<button class="mbutton" onClick="document.getElementById('mlink').click()">
+				<span>
+					<i class="fa-solid fa-download"></i>  
+				</span>
+				<span class="download-text">
+					&nbsp;Download this resume
+				</span>
+			</button>
 			<a id="mlink" href="images/cyrille.web.resume.pdf" download="Cyrille Web Resume" hidden></a>
 		</div>
 	</div>
@@ -1900,6 +1932,14 @@
                 <p class="c6 c13">
                   <span class="c1 c14"></span>
                 </p>
+				<div class="c7 ta" style="display: flex">
+					<div style="width: 5%">
+						<span class="c0 c14">&bull; </span>
+					</div>
+					<div style="width: 95%">
+						<span class="c1 c14 ma">Risk Analysis based on the ISO 27001 Framework</span>
+					</div>
+				</div>
 				<div class="c7 ta" style="display: flex">
 					<div style="width: 5%">
 						<span class="c0 c14">&bull; </span>
