@@ -1,0 +1,6 @@
+# files to ignore
+wef.html
+sonar-project.properties
+.scannerwork/.sonar_lock
+.scannerwork/report-task.txt
+# scannerwork
