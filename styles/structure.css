@@ -1,0 +1,281 @@
+.h-flex {
+  display: flex;
+}
+
+.v-flex {
+  flex-direction: column;
+}
+
+.justify-sb {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.gap-1 {
+  gap: 2.5px;
+}
+
+.gap-5 {
+  gap: 5px;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.gap-15 {
+  gap: 15px;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.header-text p,
+.header-text div {
+  margin-top: 5px;
+}
+.header-text a {
+  text-decoration: none;
+  color: #212529;
+}
+
+.header-text i {
+  color: #156138;
+}
+
+.header-text h1 {
+  font-size: 30pt;
+}
+
+.header-text p,
+.subsection-head p {
+  font-size: 15pt;
+}
+
+.header-img {
+  width: 110px;
+  height: 110px;
+  overflow: hidden;
+}
+
+.header-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.right {
+  width: calc(57.5vw - 40px);
+}
+
+.left {
+  width: calc(42.5vw - 40px);
+}
+
+.mt-5 {
+  margin-top: 5px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.pt-5 {
+  padding-top: 5px;
+}
+
+.pt-10 {
+  padding-top: 10px;
+}
+
+.pt-15 {
+  padding-top: 15px;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pb-5 {
+  padding-bottom: 5px;
+}
+
+.pb-10 {
+  padding-bottom: 10px;
+}
+
+.pb-15 {
+  padding-bottom: 15px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.pf-5 {
+  padding: 5px;
+}
+
+.pf-10 {
+  padding: 10px;
+}
+
+.pf-15 {
+  padding: 15px;
+}
+
+.pf-20 {
+  padding: 20px;
+}
+
+.pr-5 {
+  padding-right: 5px;
+}
+
+.pr-10 {
+  padding-right: 10px;
+}
+
+.pr-15 {
+  padding-right: 15px;
+}
+
+.pr-20 {
+  padding-right: 20px;
+}
+
+.pl-5 {
+  padding-left: 5px;
+}
+
+.pl-10 {
+  padding-left: 10px;
+}
+
+.pl-15 {
+  padding-left: 15px;
+}
+
+.pl-20 {
+  padding-left: 20px;
+}
+
+.br-5 {
+  border-radius: 5px;
+}
+
+.br-10 {
+  border-radius: 10px;
+}
+
+.br-100 {
+  border-radius: 100px;
+}
+
+.subsection-head {
+  border-bottom: 3.5px solid #212529;
+}
+
+.company-info {
+  padding-right: 10px;
+}
+
+.company-info img {
+  width: 50px;
+}
+
+.company-info .cialfor {
+  width: 65px;
+}
+
+ul {
+  margin: 0;
+  padding-inline-start: 15px;
+}
+
+.grid {
+  display: grid;
+}
+
+.language-box-container {
+  grid-template-columns: auto auto auto;
+}
+
+.language-box {
+  border-radius: 10px;
+  background-color: #e8faf0;
+  padding: 10px;
+}
+
+.language-progress-pill {
+  height: 25px;
+  width: 7.5px;
+  border-radius: 100px;
+  overflow: hidden;
+  align-items: end;
+  background-color: #fefffe;
+  border: 0.5px solid #156138;
+}
+
+.language-progress-pill.green {
+  background-color: #156138;
+}
+
+.half-progress-pill {
+  background-color: #156138;
+  height: 50%;
+  width: 100%;
+}
+
+.tq-progress-pill {
+  background-color: #156138;
+  height: 75%;
+  width: 100%;
+}
+
+.qt-progress-pill {
+  background-color: #156138;
+  height: 25%;
+  width: 100%;
+}
+
+.dotted-border-btm {
+  border-bottom: 1px dashed #aeaeae;
+}
+
+.skill-pill {
+  border: 1px solid #aeaeae;
+}
+
+.flex-grid {
+  flex-wrap: wrap;
+}
